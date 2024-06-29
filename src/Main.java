@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//Позже буду разбивать на ветки задания. Ранее не работала в Git
 public class Main {
     public static void main(String[] args) {
         String result = printThreeWords();
