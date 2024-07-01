@@ -197,7 +197,6 @@ public class Main {
         for(int i: arr_5){
             System.out.print(i+" ");//nastasen
         }
-
     }
 
 }
