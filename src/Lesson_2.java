@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 //Позже буду разбивать на ветки задания. Ранее не работала в Git
-public class Main {
+public class Lesson_2 {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
