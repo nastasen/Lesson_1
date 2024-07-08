@@ -1,3 +1,5 @@
+package Lesson_2;
+
 import java.util.Scanner;
 
 //Позже буду разбивать на ветки задания. Ранее не работала в Git
