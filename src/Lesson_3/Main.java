@@ -27,7 +27,7 @@ public class Main {
         }
         System.out.println("-----------------------------------------------------------------------------");
         Employee.Park p1=new Employee.Park("Park Victory",10,18);
-        System.out.println(p1.getPark()+" часы работы: "+p1.getTimeOpen()+"-"+p1.getTimeClose());
+        System.out.println("Парк: "+p1.getPark()+"\n"+"Часы работы: "+p1.getTimeOpen()+"-"+p1.getTimeClose());
 
     }
 
