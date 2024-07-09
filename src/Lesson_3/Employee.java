@@ -32,23 +32,18 @@ public class Employee {
         }
 
         public int setTimeOpen(){
-
-
             return timeOpen;
         }
 
         public int setTimeClose(){
-
             return timeClose;
         }
 
         public String setPark(){
-
             return park;
         }
     }
     public Employee(String firstName, String lastName, String email, int phoneNumber, int salary, int age) {
-
         setFirstName(firstName);
         setLastName(lastName);
         setEmail(email);
@@ -58,16 +53,12 @@ public class Employee {
     }
 
     public String getFirstName() {
-
         return firstName;
     }
-
 
     public String getLastName() {
         return lastName;
     }
-
-
 
     public String getEmail() {
         return email;
@@ -96,12 +87,10 @@ public class Employee {
 
     private void setSalary(int salary) {
         this.salary=salary;
-
     }
 
     private void setPhoneNumber(int phoneNumber) {
         this.phoneNumber=phoneNumber;
-
     }
 
     public void setFirstName(String firstName) {
