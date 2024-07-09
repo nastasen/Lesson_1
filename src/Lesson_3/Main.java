@@ -16,14 +16,14 @@ public class Main {
                 System.out.println(emp5.getFullName()+" "+emp5.getEmail()+" "+emp5.getPhoneNumber()+" "+emp5.getSalary()+" "+emp5.getAge());
 
         Employee [] empNext=new Employee[5];
-        empNext[0]=new Employee("Alice","6 Wonder","some6@mail.com", 654122,100000,35);
-        empNext[1]=new Employee("Alice","7 Wonder","some7@mail.com", 654122,100000,35);
-        empNext[2]=new Employee("Alice","8 Wonder","some8@mail.com", 654122,100000,35);
-        empNext[3]=new Employee("Alice","9 Wonder","some9@mail.com", 654122,100000,35);
-        empNext[4]=new Employee("Alice","10 Wonder","some10@mail.com", 654122,100000,35);
+        empNext[0]=new Employee("Alice","Wonder","some6@mail.com", 654122,100000,35);
+        empNext[1]=new Employee("Alice","Wonder","some7@mail.com", 654122,100000,35);
+        empNext[2]=new Employee("Alice","Wonder","some8@mail.com", 654122,100000,35);
+        empNext[3]=new Employee("Alice","Wonder","some9@mail.com", 654122,100000,35);
+        empNext[4]=new Employee("Alice"," Wonder","some10@mail.com", 654122,100000,35);
         System.out.println("-----------------------------------------------------------------------------");
         for(int i=0;i<5;i++) {
-            System.out.println(empNext[i].getFullName() + " " + empNext[i].getEmail() + " " + empNext[i].getPhoneNumber() + " " + empNext[i].getSalary() + " " + empNext[i].getAge());
+            System.out.println((i+6)+" "+empNext[i].getFullName() + " " + empNext[i].getEmail() + " " + empNext[i].getPhoneNumber() + " " + empNext[i].getSalary() + " " + empNext[i].getAge());
         }
         System.out.println("-----------------------------------------------------------------------------");
         Employee.Park p1=new Employee.Park("Park Victory",10,18);
