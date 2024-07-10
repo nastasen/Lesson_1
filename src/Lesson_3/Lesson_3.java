@@ -30,11 +30,12 @@ public class Lesson_3 {
         Park p1=new Park("Park Victory");
         System.out.println("Парк: "+p1.getPark());
         Park.Attraction a1= new Park.Attraction();
+        Park.Attraction a2= new Park.Attraction("car",10,20);
         a1.setSlides("Горки");
         a1.setTime(10);
         a1.setPrice(30);
         System.out.println(a1.getSlides()+"\n"+"Работает с:  "+ a1.getTime()+"\n"+"Стоимость: "+a1.getPrice());
-
+        System.out.println(a2.getSlides()+"\n"+"Работает с:  "+ a2.getTime()+"\n"+"Стоимость: "+a2.getPrice());
     }
 
 

@@ -1,7 +1,7 @@
 package Lesson_3;
 
 public class Park{
-    private String park;
+    private final String park;
 
     static class Attraction{
         private String slides;
@@ -9,6 +9,9 @@ public class Park{
         private int price;
 
         public Attraction(String slides, int time, int price) {
+            this.slides = slides;
+            this.time = time;
+            this.price = price;
         }
 
         public Attraction() {
