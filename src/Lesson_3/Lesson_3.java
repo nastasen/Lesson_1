@@ -27,13 +27,13 @@ public class Lesson_3 {
         }
         System.out.println("-----------------------------------------------------------------------------");
 
-        Employee.Park p1=new Employee.Park("Park Victory",10,18);
-        Employee.Park p2=new Employee.Park();
-        p2.setPark("Gagarin");
-        p2.setTimeOpen(11);
-        p2.setTimeClose(19);
-        System.out.println("Парк: "+p1.getPark()+"\n"+"Часы работы: "+p1.getTimeOpen()+"-"+p1.getTimeClose());
-        System.out.println("Парк: "+p2.getPark()+"\n"+"Часы работы: "+p2.getTimeOpen()+"-"+p2.getTimeClose());
+        Park p1=new Park("Park Victory");
+        System.out.println("Парк: "+p1.getPark());
+        Park.Attraction a1= new Park.Attraction();
+        a1.setSlides("Горки");
+        a1.setTime(10);
+        a1.setPrice(30);
+        System.out.println(a1.getSlides()+"\n"+"Работает с:  "+ a1.getTime()+"\n"+"Стоимость: "+a1.getPrice());
 
     }
 

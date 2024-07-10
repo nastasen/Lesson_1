@@ -5,49 +5,10 @@ public class Employee {
     private String lastName;
     private String position;
     private String email;
+    private int phoneNumber;
     private int salary;
     private int age;
-    private int phoneNumber;
 
-    public static class Park{
-        private String park;
-        private int timeOpen;
-        private int timeClose;
-
-        public Park(String park, int timeOpen, int timeClose){
-            this.timeOpen=timeOpen;
-            this.timeClose=timeClose;
-            this.park=park;
-        }
-
-        public Park() {
-
-        }
-
-        public int getTimeOpen() {
-            return timeOpen;
-        }
-
-        public int getTimeClose(){
-            return timeClose;
-        }
-
-        public String getPark(){
-            return park;
-        }
-
-        public void setTimeOpen(int timeOpen){
-            this.timeOpen=timeOpen;
-        }
-
-        public void setTimeClose(int timeClose){
-            this.timeClose=timeClose;
-        }
-
-        public void setPark(String park){
-            this.park=park;
-        }
-    }
     public Employee(String firstName, String lastName,String position, String email, int phoneNumber, int salary, int age) {
         setFirstName(firstName);
         setLastName(lastName);
@@ -89,8 +50,6 @@ public class Employee {
     public String getFullName() {
         return getLastName() + " " + getFirstName();
     }
-
-
 
     public void setFirstName(String firstName) {
         if (firstName.length() > 1) {
