@@ -1,8 +1,9 @@
-package Lesson_3;
+package main;
 
 public class Employee {
     private String firstName;
     private String lastName;
+    private String position;
     private String email;
     private int salary;
     private int age;
@@ -19,6 +20,10 @@ public class Employee {
             this.park=park;
         }
 
+        public Park() {
+
+        }
+
         public int getTimeOpen() {
             return timeOpen;
         }
@@ -31,21 +36,22 @@ public class Employee {
             return park;
         }
 
-        public int setTimeOpen(){
-            return timeOpen;
+        public void setTimeOpen(int timeOpen){
+           this.timeOpen=timeOpen;
         }
 
-        public int setTimeClose(){
-            return timeClose;
+        public void setTimeClose(int timeClose){
+            this.timeClose=timeClose;
         }
 
-        public String setPark(){
-            return park;
+        public void setPark(String park){
+            this.park=park;
         }
     }
-    public Employee(String firstName, String lastName, String email, int phoneNumber, int salary, int age) {
+    public Employee(String firstName, String lastName,String position, String email, int phoneNumber, int salary, int age) {
         setFirstName(firstName);
         setLastName(lastName);
+        setPosition(position);
         setEmail(email);
         setPhoneNumber(phoneNumber);
         setSalary(salary);
@@ -58,6 +64,10 @@ public class Employee {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getPosition(){
+        return position;
     }
 
     public String getEmail() {
@@ -76,22 +86,11 @@ public class Employee {
         return phoneNumber;
     }
 
-
-    public void setEmail(String email) {
-        this.email= email;
+    public String getFullName() {
+        return getLastName() + " " + getFirstName();
     }
 
-    private void setAge(int age) {
-        this.age=age;
-    }
 
-    private void setSalary(int salary) {
-        this.salary=salary;
-    }
-
-    private void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber=phoneNumber;
-    }
 
     public void setFirstName(String firstName) {
         if (firstName.length() > 1) {
@@ -109,7 +108,22 @@ public class Employee {
         }
     }
 
-    public String getFullName() {
-        return getLastName() + " " + getFirstName();
+    public void setPosition(String position){
+        this.position=position;
+    }
+    public void setSalary(int salary) {
+        this.salary=salary;
+    }
+    public void setEmail(String email) {
+        this.email= email;
+    }
+
+    public void setAge(int age) {
+        this.age=age;
+    }
+
+    public void setPhoneNumber(int phoneNumber) {
+            this.phoneNumber=phoneNumber;
+
     }
 }
