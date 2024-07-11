@@ -63,7 +63,7 @@ public class Employee {
         if (lastName.length() > 1) {
             this.lastName = Character.toUpperCase(lastName.charAt(0)) + lastName.substring(1).toLowerCase();
         } else {
-            this.lastName = lastName;
+             this.lastName = lastName;
         }
     }
 
